@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>leapYear</title>
+</head>
+<body>
+
+<script>
+    let Year = Number(prompt("nhap nam vao"));
+
+    if(Year%100 == 0) {
+        if(Year%400 == 0) {
+            Year = "leapYear";
+        }
+        else Year = "not leapYear";
+    }
+    else {
+        if (Year%4 == 0) {
+            Year = "leapYear";
+
+        }
+        else Year = "not leapYear";
+
+    }
+    if(Year == "leapYear") {
+        document.write("Year" + "is leap year")
+    }   else document.write("Year" + "is not leap year");
+</script>
+
+</body>
+</html>
